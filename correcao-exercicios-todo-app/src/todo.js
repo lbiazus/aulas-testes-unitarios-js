@@ -11,7 +11,13 @@ export default class Todo {
 
     isValid() {
         //  - !!
-        return !!this.text && !isNaN(this.when.valueOf())
+        if (!this.text) {
+            return false
+        }
+        if (isNaN(this.when.valueOf())) {
+            return false
+        }
+        return true 
         
     }
 

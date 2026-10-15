@@ -12,7 +12,7 @@ test("Soma de 2 números: ", () => {
 
 test("Soma de valores flutuantes: ", () => {
    const resultado = soma(0.2, 0.1);
- console.log("resultado ", resultado);
+ //console.log("resultado ", resultado);
    
    expect(resultado).toBeCloseTo(0.3);
 })
